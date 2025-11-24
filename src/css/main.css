@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: url("../img/red-cursor.svg") 25 25, auto;
+  cursor: url("../assets/svg/red-cursor.svg") 25 25, auto;
 }
 
 a {
@@ -21,13 +21,14 @@ body {
   background-color: black;
   width: 100vw;
   height: 100vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Style de la navigation et hover */
 nav {
   width: 100vw;
   height: 52px;
-  margin-top: 30px;
   padding-left: 100px;
   padding-right: 300px;
   background-color: white;
@@ -91,5 +92,14 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 2s ease;
+}
+
+footer {
+  position: absolute;
+  top: 100%;
+}
+
+.footer-container {
+  display: flex;
+  gap: 27px;
 }
