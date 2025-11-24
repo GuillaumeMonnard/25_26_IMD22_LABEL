@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: url("../img/cursor.svg") 33.5 33.5, auto;
 }
 
 a {
@@ -20,7 +21,6 @@ body {
   background-color: black;
   width: 100vw;
   height: 100vh;
-  cursor: url("../img/cursor.svg") 33.5 33.5, auto;
 }
 
 /* Style de la navigation et hover */
