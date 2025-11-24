@@ -17,18 +17,56 @@ video {
 body {
   font-family: "Chapman";
   font-weight: 400;
+  background-color: black;
 }
 
+/* Style de la navigation et hover */
 nav {
   width: 100vw;
   height: 52px;
   margin-top: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-  background-color: red;
+  padding-left: 100px;
+  padding-right: 300px;
+  background-color: white;
   font-family: "montserrat", sans-serif;
   text-transform: uppercase;
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
+  position: relative;
+  padding: 5px 0;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
