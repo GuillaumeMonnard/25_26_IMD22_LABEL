@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: url("../img/red-cursor.svg") 33.5 33.5, auto;
+  cursor: url("../img/red-cursor.svg") 25 25, auto;
 }
 
 a {
@@ -74,7 +74,7 @@ nav {
   width: 100%;
 }
 
-/* Paramètres de la vidéos */
+/* Paramètres de la vidéo de fond */
 #bg-video {
   position: fixed;
   top: 0;
