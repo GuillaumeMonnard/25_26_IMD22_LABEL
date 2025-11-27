@@ -28,7 +28,7 @@ body {
 nav {
   width: 100vw;
   height: 52px;
-  padding-left: 100px;
+  padding-left: 30px;
   padding-right: 300px;
   background-color: white;
   font-family: "montserrat", sans-serif;
@@ -102,12 +102,13 @@ footer {
   width: 100vw;
   position: fixed;
   top: 95%;
-  padding: 0px 100px;
+  padding: 0px 30px;
   color: white;
   font-family: "montserrat", sans-serif;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
 }
 
 .footer-socials {
@@ -115,4 +116,9 @@ footer {
   gap: 27px;
   justify-content: center;
   align-items: center;
+}
+
+.footer-socials img {
+  width: 150%;
+  height: 150%;
 }
