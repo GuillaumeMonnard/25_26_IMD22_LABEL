@@ -87,10 +87,15 @@ nav {
 }
 
 .label {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 1200ms ease;
+}
+
+.label:hover {
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 footer {
@@ -101,7 +106,6 @@ footer {
   color: white;
   font-family: "montserrat", sans-serif;
   text-transform: uppercase;
-
   display: flex;
   justify-content: space-between;
 }
