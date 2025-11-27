@@ -95,8 +95,15 @@ nav {
 }
 
 footer {
+  width: 100vw;
   position: absolute;
-  top: 100%;
+  top: 90%;
+  color: white;
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 0px 100px 0px 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-container {
