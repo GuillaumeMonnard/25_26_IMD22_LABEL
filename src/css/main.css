@@ -134,9 +134,10 @@ footer {
   margin-bottom: 51px;
   flex-direction: column;
   gap: 0px;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 138px);
   overflow-y: auto;
   scrollbar-width: none;
+  outline: 10px solid red;
 }
 
 .artist-link {
