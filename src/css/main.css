@@ -134,8 +134,15 @@ footer {
   flex-direction: column;
   gap: 0px;
   margin-bottom: 51px;
+  width: 100%;
   height: calc(100vh - 138px);
   overflow-y: auto;
+}
+
+.separator {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .artist-link {
