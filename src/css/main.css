@@ -125,3 +125,42 @@ footer {
   width: 150%;
   height: 150%;
 }
+
+.artists-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.artist-link {
+  background: transparent;
+  position: relative;
+}
+
+.artist-link:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 00px;
+  width: 100%;
+  background: red;
+  display: block;
+  z-index: 0;
+  transition: 300ms ease;
+}
+
+.artist-link:hover:before {
+  top: 0%;
+  height: 100%;
+}
+
+.artist {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  font-size: 84px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 33px 0px 33px 118px;
+  z-index: 1;
+}
