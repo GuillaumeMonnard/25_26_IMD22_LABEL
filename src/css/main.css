@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* cursor: url("../assets/svg/red-cursor.svg") 25 25, auto; */
 }
 
 a {
@@ -24,7 +23,6 @@ body {
   background: url("../assets/img/bg.png");
   background-color: black;
   overflow: hidden;
-  cursor: none;
 }
 
 /* Style de la navigation et hover */
