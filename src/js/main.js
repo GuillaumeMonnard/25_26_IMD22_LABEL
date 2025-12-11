@@ -31,3 +31,47 @@ function smoothScroll() {
 }
 
 smoothScroll();
+
+import gal from "../assets/cursor/gal.jpg";
+import jeuneMort from "../assets/cursor/jeune-mort.jpg";
+import mLeMaudit from "../assets/cursor/m-le-maudit.jpg";
+import sheldon from "../assets/cursor/sheldon.jpg";
+import shien from "../assets/cursor/shien.jpg";
+import sopico from "../assets/cursor/sopico.jpg";
+import whiteCorbeau from "../assets/cursor/white-corbeau.jpg";
+import yungCoeur from "../assets/cursor/yung-coeur.jpg";
+import zinee from "../assets/cursor/zinee.jpg";
+
+const map = {
+  Gal: gal,
+  "Jeune Mort": jeuneMort,
+  "M le maudit": mLeMaudit,
+  Sheldon: sheldon,
+  Shien: shien,
+  Sopico: sopico,
+  "White Corbeau": whiteCorbeau,
+  "Yung Coeur": yungCoeur,
+  Zinee: zinee,
+};
+
+const artists = document.querySelectorAll(".artist-link");
+const bgHover = document.querySelector(".bg-hover");
+
+artists.forEach((link) => {
+  const nameEl = link.querySelector(".artist-name");
+  const name = nameEl ? nameEl.textContent.trim() : null;
+  if (!name || !map[name]) return;
+
+  link.addEventListener("mouseenter", () => {
+    document.body.style.backgroundImage = `url("${map[name]}")`;
+    document.body.style.backgroundSize = "auto";
+    document.body.style.backgroundPosition = "right center";
+    document.body.style.backgroundRepeat = "no-repeat";
+    bgHover.style.opacity = "1";
+  });
+
+  link.addEventListener("mouseleave", () => {
+    document.body.style.backgroundImage = "";
+    bgHover.style.opacity = "0";
+  });
+});
