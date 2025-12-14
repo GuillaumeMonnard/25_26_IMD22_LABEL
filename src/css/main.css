@@ -284,6 +284,11 @@ p {
   gap: 10px;
 }
 
+.socials img {
+  width: 25px;
+}
+
 .socials {
-  align-items: space-between;
+  width: 600px;
+  justify-content: space-between;
 }
