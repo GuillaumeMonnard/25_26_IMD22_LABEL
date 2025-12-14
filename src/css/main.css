@@ -227,6 +227,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   gap: 60px;
+  padding: 33px 0 33px 0;
   background-color: red;
   font-size: 84px;
   text-transform: uppercase;
@@ -236,7 +237,7 @@ footer {
 }
 
 .ticker {
-  animation: scroll-left 2s linear infinite;
+  animation: scroll-left 10s linear infinite;
 }
 
 p {
