@@ -272,9 +272,18 @@ p {
   flex-shrink: 0;
 }
 
-.artist-presentation {
-}
 .artist-img {
   width: 500px;
   height: 500px;
+}
+
+.socials,
+.socials-contact,
+.socials-listen {
+  display: flex;
+  gap: 10px;
+}
+
+.socials {
+  align-items: space-between;
 }
