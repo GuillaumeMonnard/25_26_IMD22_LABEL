@@ -278,10 +278,15 @@ p {
 }
 
 .socials,
+.artist-description,
 .socials-contact,
 .socials-listen {
   display: flex;
   gap: 10px;
+}
+
+.artist-description {
+  flex-direction: column;
 }
 
 .socials img {
