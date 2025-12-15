@@ -188,46 +188,6 @@ footer {
   display: none;
 }
 
-/* .custom-scrollbar {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  width: 25px;
-  height: 100%;
-  pointer-events: none;
-}
-
-.custom-thumb {
-  width: 25px;
-  height: 25px;
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  transition: top 0.2s ease;
-  pointer-events: all;
-}
-
-.custom-scrollbar-horizontal {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  height: 25px;
-  width: calc(100% - 20px);
-  pointer-events: none;
-}
-
-.custom-thumb-horizontal {
-  height: 25px;
-  width: 50px;
-  background: white;
-  border-radius: 12px;
-  position: absolute;
-  left: 0;
-  transition: left 0.2s ease;
-  pointer-events: all;
-} */
-
 .bg-hover {
   position: fixed;
   top: 50%;
@@ -248,6 +208,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   gap: 60px;
+  margin-top: 10px;
   padding: 33px 0 33px 0;
   background-color: red;
   font-size: 84px;
@@ -283,7 +244,7 @@ p {
   color: white;
   font-family: "montserrat", sans-serif;
   text-transform: uppercase;
-  margin: 15px 0 15px 30px;
+  margin: 10px 0 10px 30px;
 }
 
 .artist-content::-webkit-scrollbar {
@@ -316,13 +277,16 @@ p {
 .album {
   flex-direction: column;
   align-items: center;
+  width: 512.039px;
+  gap: 4px;
+  flex-shrink: 0;
 }
 
 .artist-description {
   flex-direction: column;
   color: var(--white, #fcfcfc);
   font-family: Montserrat;
-  font-size: var(--text-p, 18px);
+  font-size: var(--text-p, 20px);
   font-weight: 600;
   line-height: 126.826%;
   font-variant: all-small-caps;
