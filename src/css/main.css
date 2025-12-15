@@ -432,8 +432,9 @@ MEDIA QUERIES POUR LE RESPONSIVE DESIGN
   }
 
   footer {
+    position: relative;
     margin-bottom: 15px;
-    padding: 0px 15px;
+    padding: 30px 30px;
     font-size: 8px;
   }
 
@@ -492,13 +493,12 @@ MEDIA QUERIES POUR LE RESPONSIVE DESIGN
   .socials-contact,
   .socials,
   .album {
-    width: 90%;
+    width: 100%;
   }
 
   .artist-texts {
-    justify-content: space-between;
     height: 400px;
-    margin: 5px 15px;
+    width: 75vw;
   }
 
   .artist-description {
@@ -525,12 +525,5 @@ MEDIA QUERIES POUR LE RESPONSIVE DESIGN
   .artist-img {
     width: 250px;
     height: 250px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .artist-content {
-    width: 100vw;
-    height: 100vh;
   }
 }
