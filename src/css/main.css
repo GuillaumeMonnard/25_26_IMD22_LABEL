@@ -154,11 +154,11 @@ footer {
   content: "";
   position: absolute;
   top: 50%;
-  height: 00px;
+  height: 0px;
   width: 100%;
   background: red;
   display: block;
-  transition: 300ms ease;
+  transition: 500ms ease;
 }
 
 .artist-link:hover:before {
@@ -263,6 +263,10 @@ p {
   margin: 15px 0 15px 30px;
 }
 
+.artist-content::-webkit-scrollbar {
+  display: none;
+}
+
 .artist-texts {
   display: flex;
   width: 625px;
@@ -296,4 +300,32 @@ p {
 .socials {
   width: 600px;
   justify-content: space-between;
+}
+
+.button {
+  background: transparent;
+  position: relative;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 0px;
+  width: 100%;
+  color: white;
+  background: red;
+  display: block;
+  transition: 500ms ease;
+}
+
+.button:hover:before {
+  top: 0%;
+  height: 100%;
+}
+
+.artist-texts {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
 }
