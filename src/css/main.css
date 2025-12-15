@@ -35,7 +35,7 @@ nav {
   width: 100vw;
   height: 52px;
   margin-top: 30px;
-  padding: 0 300px 0 30px;
+  padding: 0 100px 0 30px;
   background-color: white;
   font-family: "montserrat", sans-serif;
   font-size: 15px;
@@ -75,6 +75,11 @@ nav {
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
 }
 
 /*----------------------------------------------------------------
@@ -163,6 +168,7 @@ GESTION DES ICONS DES RESEAUX
 .icon:hover {
   transform: scale(1.3);
 }
+
 /* ----------------------------------------------------------------
 LISTE DES ARTISTES ET HOVER 
 ----------------------------------------------------------------*/
@@ -397,3 +403,134 @@ GESTION DU BUTTON POUR ECOUTER L'ALBUM
 /* ----------------------------------------------------------------
 MEDIA QUERIES POUR LE RESPONSIVE DESIGN
 ----------------------------------------------------------------*/
+@media (max-width: 601px) {
+  body {
+    font-size: 12px;
+    overflow: auto;
+  }
+
+  nav {
+    width: 100vw;
+    height: 26px;
+    margin-top: 15px;
+    padding: 0 50px 0 15px;
+    font-size: 8px;
+  }
+
+  .nav-container {
+    gap: 10px;
+  }
+
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .label {
+    width: 50%;
+    height: 50%;
+  }
+
+  footer {
+    margin-bottom: 15px;
+    padding: 0px 15px;
+    font-size: 8px;
+  }
+
+  .footer-socials {
+    gap: 13px;
+  }
+
+  .footer-socials .icon,
+  .icon {
+    width: 12.5px;
+    height: 12.5px;
+    margin: 2.5px;
+  }
+
+  .artist-name {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 16px 0px 16px 59px;
+  }
+
+  .artist-name:hover {
+    font-size: 32px;
+    padding: 7.5px 0px 8px 59px;
+  }
+
+  .bg-hover {
+    position: fixed;
+    top: 25%;
+    width: 30%;
+  }
+
+  .ticker-container {
+    gap: 30px;
+    margin-top: 5px;
+    padding: 16px 0 16px 0;
+    font-size: 42px;
+  }
+
+  /* ------ */
+
+  .artist-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 5px 0 5px 15px;
+    width: 90%;
+  }
+
+  .artist-texts,
+  .artist-description,
+  .artist-news,
+  .last-releases,
+  .next-concert,
+  .socials-listen,
+  .socials-contact,
+  .socials,
+  .album {
+    width: 90%;
+  }
+
+  .artist-texts {
+    justify-content: space-between;
+    height: 400px;
+    margin: 5px 15px;
+  }
+
+  .artist-description {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .artist-news {
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .last-releases,
+  .next-concert {
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .album {
+    gap: 15px;
+  }
+
+  .artist-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .artist-content {
+    width: 100vw;
+    height: 100vh;
+  }
+}
