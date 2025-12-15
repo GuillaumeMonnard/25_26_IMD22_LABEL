@@ -284,9 +284,15 @@ p {
 .socials,
 .artist-description,
 .socials-contact,
-.socials-listen {
+.socials-listen,
+.album {
   display: flex;
   gap: 10px;
+}
+
+.album {
+  flex-direction: column;
+  align-items: center;
 }
 
 .artist-description {
@@ -305,6 +311,7 @@ p {
 .button {
   background: transparent;
   position: relative;
+  z-index: 0;
 }
 
 .button:before {
@@ -317,6 +324,7 @@ p {
   background: red;
   display: block;
   transition: 500ms ease;
+  z-index: -1;
 }
 
 .button:hover:before {
