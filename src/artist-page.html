@@ -15,13 +15,13 @@
   </head>
   <body>
     <include src="components/nav.html"></include>
-    <!-- AJOUTER LA BANNER ANIMEE -->
     <include
       src="components/ticker.html"
       locals='{"artist": "sheldon"}'
     ></include>
-    <!-- AJOUTER LE LAYOUT HORIZONTAL AVEC LA DESCRIPTION DE L'ARTISTE, DEUX ALBUMS AVEC LES BOUTON PLAY POUR ECOUTER -->
+    <!-- CONTENEUR HORIZONTAL POUR LE CONTENU DE L'ARTISTE -->
     <div class="artist-content">
+      <!-- CONTENEUR POUR LE CONTENU TEXTUEL -->
       <div class="artist-texts">
         <div class="artist-description">
           <p>
@@ -94,11 +94,13 @@
           </div>
         </div>
       </div>
+      <!-- IMG DE L'ARTISTE -->
       <img
         src="assets/img/artists/sheldon/SHELDON.jpg"
         alt=""
         class="artist-img"
       />
+      <!-- IMG DE L'ALBUM 1 + BUTTON -->
       <div class="album">
         <img
           src="assets/img/artists/sheldon/album-ilot.jpg"
@@ -109,6 +111,7 @@
           <div class="button-text">listen</div>
         </div>
       </div>
+      <!-- IMG DE L'ALBUM 2 + BUTTON -->
       <div class="album">
         <img
           src="assets/img/artists/sheldon/album-seuls.jpg"
