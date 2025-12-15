@@ -436,6 +436,7 @@ MEDIA QUERIES POUR LE RESPONSIVE DESIGN
     margin-bottom: 15px;
     padding: 30px 30px;
     font-size: 8px;
+    flex: 1;
   }
 
   .footer-socials {
