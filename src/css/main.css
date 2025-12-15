@@ -222,22 +222,6 @@ footer {
   opacity: 0;
 }
 
-/* .bg-hover {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: auto;
-  height: 80vh;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  pointer-events: none;
-  z-index: 10;
-  opacity: 0;
-  transform: opacity 0.3s ease, transform 0.3s ease;
-} */
-
 .ticker-container {
   display: flex;
   flex-direction: row;

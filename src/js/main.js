@@ -72,22 +72,3 @@ artists.forEach((link) => {
     bgHover.style.opacity = "0";
   });
 });
-
-// artists.forEach((link) => {
-//   const nameEl = link.querySelector(".artist-name");
-//   const name = nameEl ? nameEl.textContent.trim() : null;
-//   if (!name || !map[name]) return;
-
-//   link.addEventListener("mouseenter", () => {
-//     document.body.style.backgroundImage = `url("${map[name]}")`;
-//     document.body.style.backgroundSize = "auto";
-//     document.body.style.backgroundPosition = "right center";
-//     document.body.style.backgroundRepeat = "no-repeat";
-//     bgHover.style.opacity = "1";
-//   });
-
-//   link.addEventListener("mouseleave", () => {
-//     document.body.style.backgroundImage = "";
-//     bgHover.style.opacity = "0";
-//   });
-// });
