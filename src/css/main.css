@@ -314,15 +314,25 @@ p {
   z-index: 0;
 }
 
+.button-text {
+  position: relative;
+  padding: 8px 16px;
+  transition: 500ms ease;
+}
+
+.button-text:hover {
+  transform: scale(1.1);
+}
+
 .button:before {
   content: "";
   position: absolute;
   top: 50%;
   height: 0px;
   width: 100%;
+  display: block;
   color: white;
   background: red;
-  display: block;
   transition: 500ms ease;
   z-index: -1;
 }
