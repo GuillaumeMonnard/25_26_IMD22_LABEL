@@ -138,6 +138,7 @@ footer {
   height: calc(100vh - 138px);
   overflow-y: auto;
   z-index: 0;
+  scroll-behavior: smooth;
 }
 
 .separator {
@@ -187,7 +188,7 @@ footer {
   display: none;
 }
 
-.custom-scrollbar {
+/* .custom-scrollbar {
   position: absolute;
   top: 10%;
   right: 10px;
@@ -206,6 +207,26 @@ footer {
   transition: top 0.2s ease;
   pointer-events: all;
 }
+
+.custom-scrollbar-horizontal {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 25px;
+  width: calc(100% - 20px);
+  pointer-events: none;
+}
+
+.custom-thumb-horizontal {
+  height: 25px;
+  width: 50px;
+  background: white;
+  border-radius: 12px;
+  position: absolute;
+  left: 0;
+  transition: left 0.2s ease;
+  pointer-events: all;
+} */
 
 .bg-hover {
   position: fixed;
@@ -256,7 +277,9 @@ p {
 .artist-content {
   display: flex;
   gap: 10px;
+  position: relative;
   overflow-x: auto;
+  scroll-behavior: smooth;
   color: white;
   font-family: "montserrat", sans-serif;
   text-transform: uppercase;

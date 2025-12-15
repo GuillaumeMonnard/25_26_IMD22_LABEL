@@ -1,36 +1,51 @@
-const container = document.querySelector(".artists-container");
+//------------------------------------------//
+/* =========================================================
+   SCROLL VERTICAL — PAGE LISTE ARTISTES
+========================================================= */
 
-let currentScroll = container.scrollTop;
-let targetScroll = currentScroll;
-const ease = 0.08; // plus petit = plus lent / smooth
+// const artistsContainer = document.querySelector(".artists-container");
 
-// Scroll avec la molette
-container.addEventListener("wheel", (e) => {
-  e.preventDefault();
-  targetScroll += e.deltaY;
-  targetScroll = Math.max(
-    0,
-    Math.min(targetScroll, container.scrollHeight - container.clientHeight)
-  );
-});
+// if (artistsContainer) {
+//   let currentScroll = artistsContainer.scrollTop;
+//   let targetScroll = currentScroll;
+//   const ease = 0.18;
 
-// Animation de la position du scroll et du thumb
-function smoothScroll() {
-  currentScroll += (targetScroll - currentScroll) * ease;
-  container.scrollTop = currentScroll;
+//   artistsContainer.addEventListener("wheel", (e) => {
+//     e.preventDefault();
+//     targetScroll += e.deltaY;
+//     targetScroll = Math.max(
+//       0,
+//       Math.min(
+//         targetScroll,
+//         artistsContainer.scrollHeight - artistsContainer.clientHeight
+//       )
+//     );
+//   });
 
-  // update custom thumb
-  const thumb = document.querySelector(".custom-thumb");
-  const maxThumbTop = container.clientHeight - thumb.offsetHeight;
-  const thumbTop =
-    (currentScroll / (container.scrollHeight - container.clientHeight)) *
-    maxThumbTop;
-  thumb.style.top = `${thumbTop}px`;
+//   function smoothScrollVertical() {
+//     currentScroll += (targetScroll - currentScroll) * ease;
+//     artistsContainer.scrollTop = currentScroll;
 
-  requestAnimationFrame(smoothScroll);
-}
+//     const thumb = document.querySelector(".custom-thumb");
+//     if (thumb) {
+//       const maxThumbTop = artistsContainer.clientHeight - thumb.offsetHeight;
+//       const thumbTop =
+//         (currentScroll /
+//           (artistsContainer.scrollHeight - artistsContainer.clientHeight)) *
+//         maxThumbTop;
 
-smoothScroll();
+//       thumb.style.top = `${thumbTop}px`;
+//     }
+
+//     requestAnimationFrame(smoothScrollVertical);
+//   }
+
+//   smoothScrollVertical();
+// }
+
+/* =========================================================
+   HOVER IMAGE — LISTE ARTISTES
+========================================================= */
 
 import gal from "../assets/cursor/gal.jpg";
 import jeuneMort from "../assets/cursor/jeune-mort.jpg";
@@ -42,7 +57,7 @@ import whiteCorbeau from "../assets/cursor/white-corbeau.jpg";
 import yungCoeur from "../assets/cursor/yung-coeur.jpg";
 import zinee from "../assets/cursor/zinee.jpg";
 
-const map = {
+const imageMap = {
   Gal: gal,
   "Jeune Mort": jeuneMort,
   "M le maudit": mLeMaudit,
@@ -54,21 +69,23 @@ const map = {
   Zinee: zinee,
 };
 
-const artists = document.querySelectorAll(".artist-link");
+const artistLinks = document.querySelectorAll(".artist-link");
 const bgHover = document.querySelector(".bg-hover");
 
-artists.forEach((link) => {
-  const nameEl = link.querySelector(".artist-name");
-  const name = nameEl ? nameEl.textContent.trim() : null;
-  if (!name || !map[name]) return;
+if (artistLinks.length && bgHover) {
+  artistLinks.forEach((link) => {
+    const nameEl = link.querySelector(".artist-name");
+    const name = nameEl?.textContent.trim();
 
-  link.addEventListener("mouseenter", () => {
-    // Mettre l'image dans bg-hover
-    bgHover.style.backgroundImage = `url("${map[name]}")`;
-    bgHover.style.opacity = "1";
-  });
+    if (!name || !imageMap[name]) return;
 
-  link.addEventListener("mouseleave", () => {
-    bgHover.style.opacity = "0";
+    link.addEventListener("mouseenter", () => {
+      bgHover.style.backgroundImage = `url("${imageMap[name]}")`;
+      bgHover.style.opacity = "1";
+    });
+
+    link.addEventListener("mouseleave", () => {
+      bgHover.style.opacity = "0";
+    });
   });
-});
+}
