@@ -366,6 +366,7 @@ GESTION DU CONTENU DE L'ARTISTE
 /* ----------------------------------------------------------------
 GESTION DU BUTTON POUR ECOUTER L'ALBUM
 ----------------------------------------------------------------*/
+
 .button-text {
   position: relative;
   padding: 8px 16px;
@@ -392,3 +393,7 @@ GESTION DU BUTTON POUR ECOUTER L'ALBUM
   top: 0%;
   height: 100%;
 }
+
+/* ----------------------------------------------------------------
+MEDIA QUERIES POUR LE RESPONSIVE DESIGN
+----------------------------------------------------------------*/
