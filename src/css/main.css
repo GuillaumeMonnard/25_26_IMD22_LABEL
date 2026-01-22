@@ -301,7 +301,7 @@ GESTION DU CONTENU DE L'ARTISTE
   scrollbar-width: none;
   color: white;
   font-family: "montserrat", sans-serif;
-  margin: 10px 0 10px 30px;
+  margin: 10px 30px;
 }
 
 .artist-content::-webkit-scrollbar {
