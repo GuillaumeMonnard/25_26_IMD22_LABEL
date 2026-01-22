@@ -44,3 +44,12 @@ if (artistLinks.length && bgHover) {
     });
   });
 }
+
+const scrollContent = document.querySelector(".artist-content");
+
+scrollContent.addEventListener("wheel", (e) => {
+  e.preventDefault(); //empêche le scroll vertical
+  const scrollAmount = e.deltaY * 15;
+
+  scrollContent.scrollLeft += scrollAmount;
+});

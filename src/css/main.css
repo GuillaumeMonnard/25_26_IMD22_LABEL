@@ -293,7 +293,9 @@ GESTION DU CONTENU DE L'ARTISTE
   gap: 10px;
   position: relative;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
+  scrollbar-width: none;
   color: white;
   font-family: "montserrat", sans-serif;
   text-transform: uppercase;
