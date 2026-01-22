@@ -24,7 +24,6 @@ body {
   background: url("../assets/img/bg.png");
   background-color: black;
   overflow: hidden;
-  text-transform: uppercase;
 }
 
 /*----------------------------------------------------------------
@@ -43,6 +42,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 10px 27.3px 0 rgba(0, 0, 0, 0.62);
+  text-transform: uppercase;
 }
 
 .nav-container {
@@ -130,6 +130,7 @@ footer {
   font-family: "montserrat", sans-serif;
   font-size: 12px;
   font-weight: 200;
+  text-transform: uppercase;
 }
 
 .footer-socials {
@@ -148,6 +149,7 @@ GESTION DES ICONS DES RESEAUX
   position: relative;
   z-index: 0;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .footer-socials .button {
@@ -184,6 +186,7 @@ LISTE DES ARTISTES ET HOVER
   overflow-y: auto;
   z-index: 0;
   scroll-behavior: smooth;
+  text-transform: uppercase;
 }
 
 .separator {
@@ -216,7 +219,6 @@ LISTE DES ARTISTES ET HOVER
 .artist-name {
   position: relative;
   color: white;
-  text-transform: uppercase;
   font-size: 84px;
   font-style: italic;
   font-weight: 600;
@@ -257,6 +259,7 @@ GESTION DU TICKER
 ---------------------------------------------------------------- */
 
 .ticker-container {
+  cursor: default;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -298,7 +301,6 @@ GESTION DU CONTENU DE L'ARTISTE
   scrollbar-width: none;
   color: white;
   font-family: "montserrat", sans-serif;
-  text-transform: uppercase;
   margin: 10px 0 10px 30px;
 }
 
@@ -329,15 +331,16 @@ GESTION DU CONTENU DE L'ARTISTE
   gap: 10px;
   color: var(--white, #fcfcfc);
   font-family: Montserrat;
-  font-size: var(--text-p, 20px);
-  font-weight: 600;
-  line-height: 126.826%;
-  font-variant: all-small-caps;
+  font-size: var(--text-p, 18px);
+  font-weight: 200;
+  line-height: 124.8%;
+  font-variant: normal;
 }
 
 .artist-news {
   gap: 25px;
   flex-direction: column;
+  font-weight: 300;
 }
 
 .last-releases,
@@ -455,7 +458,6 @@ MEDIA QUERIES POUR LE RESPONSIVE DESIGN
 
   .artist-name {
     color: white;
-    text-transform: uppercase;
     font-size: 20px;
     padding: 16px 0px 16px 59px;
   }
