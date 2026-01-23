@@ -24,6 +24,11 @@ body {
   background: url("../assets/img/bg.png");
   background-color: black;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+img .button {
+  width: 100%;
 }
 
 /*----------------------------------------------------------------
@@ -412,7 +417,6 @@ MEDIA QUERIES POUR LE RESPONSIVE DESIGN
 @media (max-width: 601px) {
   body {
     font-size: 12px;
-    overflow: auto;
   }
 
   nav {
@@ -438,7 +442,7 @@ MEDIA QUERIES POUR LE RESPONSIVE DESIGN
   }
 
   footer {
-    position: relative;
+    position: fixed;
     margin-bottom: 15px;
     padding: 30px 30px;
     font-size: 8px;
@@ -485,9 +489,11 @@ MEDIA QUERIES POUR LE RESPONSIVE DESIGN
   .artist-content {
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-    margin: 5px 0 5px 15px;
-    width: 90%;
+    gap: 50px;
+    margin: 5px 10px;
+
+    position: relative;
+    overflow-y: show;
   }
 
   .artist-texts,
