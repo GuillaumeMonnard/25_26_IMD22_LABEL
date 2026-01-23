@@ -27,9 +27,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-img .button {
-  width: 100%;
-}
 
 /*----------------------------------------------------------------
 NAVIGATION ET HOVER
@@ -168,7 +165,7 @@ GESTION DES ICONS DES RESEAUX
 .footer-socials .icon,
 .icon {
   width: 25px;
-  height: 25px;
+  height: auto;
   transition: 500ms ease;
   margin: 5px;
 }
